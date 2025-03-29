@@ -213,11 +213,11 @@ button:active {
 ```
 ## OUTPUT
 
-![dhareeneweb4 sc2](https://github.com/user-attachments/assets/0e3d46a9-9ad3-40b1-8ebf-0c51e052d7b2)
+![dhareeneweb41](https://github.com/user-attachments/assets/361a7dc4-843b-4dcb-943d-6770c096ba1f)
 
-![dhareeneweb4 sc3](https://github.com/user-attachments/assets/458afb4d-3031-421c-a802-4a13f6352b56)
+![dhareeneweb42](https://github.com/user-attachments/assets/024d18bd-0c81-4daf-8c24-89381c3ac477)
 
-
+![dhareeneweb43](https://github.com/user-attachments/assets/9a80e0a0-3441-43f6-beb8-d09bc5e402d6)
 
 
 ## RESULT
