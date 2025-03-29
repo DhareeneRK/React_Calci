@@ -57,7 +57,7 @@ function App() {
   const handleClick = (value) => {
     if (value === '=') {
       calculateResult();
-    } else if (value === 'AC') {
+    } else if (value === 'C') {
       setInput('');
     } else if (value === '⌫') {
       setInput((prevInput) => prevInput.slice(0, -1));
@@ -76,44 +76,44 @@ function App() {
 
   return (
     <div className="calculator">
-      <h1>Calculator</h1>
       <div className="display">
         <input type="text" value={input} readOnly />
-        
       </div>
       <div className="buttons">
-        {[ 'AC', '⌫', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=' ].map((button) => (
+        {[ 'C', '⌫', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=' ].map((button) => (
           <button
             key={button}
             onClick={() => handleClick(button)}
-            className={`button-circle ${
+            className={
               button === '=' ? 'equals' :
-              button === 'AC' ? 'all-clear' :
+              button === 'C' ? 'clear' :
               button === '⌫' ? 'backspace' :
               ['/','*','-','+','%'].includes(button) ? 'operator' : 'number'
-            }`}
+            }
           >
             {button}
           </button>
         ))}
       </div>
       <footer className="footer">
-        <p>&copy; Dhareene R K (212222040035)</p>
+        <p>&copy; 2025 Simple Calculator </p>
+          <p>Dhareene R K (212222040035)</p>
       </footer>
     </div>
   );
 }
 
 export default App;
+
 ```
 
 ### App.css
 ```
 
-body {
+ody {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ffebf0, #dbe7ff);
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,16 +121,16 @@ body {
 }
 
 .calculator {
-  background: #f8d7da;
-  padding: 30px;
+  background: #f8c3c9;
+  padding: 25px;
   border-radius: 15px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
-  width: 400px;
+  width: 350px;
   text-align: center;
 }
 
 .display {
-  background: #ffdde1;
+  background: #ffffff;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -139,8 +139,8 @@ body {
 
 .display input {
   width: 100%;
-  height: 60px;
-  font-size: 32px;
+  height: 50px;
+  font-size: 28px;
   text-align: right;
   padding: 10px;
   border: none;
@@ -156,73 +156,62 @@ body {
 }
 
 button {
-  width: 70px;
-  height: 70px;
-  font-size: 24px;
+  width: 65px;
+  height: 65px;
+  font-size: 22px;
   cursor: pointer;
   border: none;
-  background: #ffcbf2;
-  color: #333;
+  background: #f2a1a8;
+  color: #ffffff;
   border-radius: 12px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background: #ffc8dd;
+  background: #f39a9f;
 }
 
 button:active {
-  background: #ffafcc;
+  background: #e57373;
   transform: scale(0.95);
 }
 
 .equals {
-  background: #ffb4a2;
-  color: #fff;
+  background: #ff6b6b;
   border-radius: 25px;
 }
 
 .equals:hover {
-  background: #e5989b;
+  background: #e74c3c;
 }
 
-.all-clear {
-  background: #ffb3c6;
+.clear {
+  background: #ff4757;
 }
 
-.all-clear:hover {
-  background: #ff8fab;
+.clear:hover {
+  background: #c0392b;
 }
 
 .backspace {
-  background: #b5e2fa;
+  background: #1e90ff;
 }
 
 .backspace:hover {
-  background: #99d5ee;
+  background: #0056b3;
 }
 
 .operator {
-  background: #c1e1c1;
+  background: #38b000;
 }
 
 .operator:hover {
-  background: #a3d2a3;
+  background: #2d6a4f;
 }
-
-.footer {
-  margin-top: 15px;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-}
-
 
 ```
 ## OUTPUT
-![dhareeneweb4 sc1](https://github.com/user-attachments/assets/ff4b9f5f-26f8-4dd3-8e9f-6e621b18d52d)
 
 ![dhareeneweb4 sc2](https://github.com/user-attachments/assets/0e3d46a9-9ad3-40b1-8ebf-0c51e052d7b2)
 
