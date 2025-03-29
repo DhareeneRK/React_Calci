@@ -51,7 +51,7 @@ Upload to GitHub Pages for free hosting.
 ### App.js
 ```
 import React, { useState } from 'react';
-import './styles.css';
+import './App.css';
 
 function App() {
   const [input, setInput] = useState('');
