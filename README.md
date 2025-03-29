@@ -46,7 +46,7 @@ Deploy the website.
 Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
-###App.js
+### App.js
 ```
 import React, { useState } from 'react';
 import './styles.css';
@@ -107,7 +107,7 @@ function App() {
 export default App;
 ```
 
-###App.css
+### App.css
 ```
 import React, { useState } from 'react';
 import "./App.css";
