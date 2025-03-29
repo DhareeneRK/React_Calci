@@ -1,6 +1,8 @@
 # Ex04 Simple Calculator - React Project
 ## Date: 29/3/24
 
+## Name: Dhareene R K
+## Registration Number : 212222040035
 ## AIM
 To  develop a Simple Calculator using React.js with clean and responsive design, ensuring a smooth user experience across different screen sizes.
 
