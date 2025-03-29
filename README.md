@@ -282,6 +282,10 @@ button:active {
 ```
 ## OUTPUT
 ![dhareeneweb4 sc1](https://github.com/user-attachments/assets/ff4b9f5f-26f8-4dd3-8e9f-6e621b18d52d)
+![dhareeneweb4 sc2](https://github.com/user-attachments/assets/0e3d46a9-9ad3-40b1-8ebf-0c51e052d7b2)
+![dhareeneweb4 sc3](https://github.com/user-attachments/assets/458afb4d-3031-421c-a802-4a13f6352b56)
+
+
 
 
 ## RESULT
