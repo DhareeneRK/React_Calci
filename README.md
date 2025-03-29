@@ -1,5 +1,5 @@
 # Ex04 Simple Calculator - React Project
-## Date:
+## Date: 29/3/24
 
 ## AIM
 To  develop a Simple Calculator using React.js with clean and responsive design, ensuring a smooth user experience across different screen sizes.
@@ -109,65 +109,6 @@ export default App;
 
 ### App.css
 ```
-import React, { useState } from 'react';
-import "./App.css";
-
-function App() {
-  const [input, setInput] = useState('');
-
-  const handleClick = (value) => {
-    if (value === '=') {
-      calculateResult();
-    } else if (value === 'AC') {
-      setInput('');
-    } else if (value === '⌫') {
-      setInput((prevInput) => prevInput.slice(0, -1));
-    } else {
-      setInput((prevInput) => prevInput + value);
-    }
-  };
-
-  const calculateResult = () => {
-    try {
-      setInput(eval(input).toString());
-    } catch (error) {
-      setInput('Error');
-    }
-  };
-
-  return (
-    <div className="calculator">
-      <h1>Calculator</h1>
-      <div className="display">
-        <input type="text" value={input} readOnly />
-      </div>
-      <div className="buttons">
-        {[ 'AC', '⌫', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=' ].map((button) => (
-          <button
-            key={button}
-            onClick={() => handleClick(button)}
-            className={`button-circle ${
-              button === '=' ? 'equals' :
-              button === 'AC' ? 'all-clear' :
-              button === '⌫' ? 'backspace' :
-              ['/','*','-','+','%'].includes(button) ? 'operator' : 'number'
-            }`}
-          >
-            {button}
-          </button>
-        ))}
-      </div>
-      <footer className="footer">
-        <p>&copy; Developed by: Deepika S</p>
-        <p>Register Number: 212222230028</p>
-      </footer>
-    </div>
-  );
-}
-
-export default App;
-
-/* CSS */
 
 body {
   margin: 0;
